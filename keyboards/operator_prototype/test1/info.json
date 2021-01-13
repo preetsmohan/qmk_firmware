@@ -1,0 +1,14 @@
+{
+    "keyboard_name": "operator prototype",
+    "url": "",
+    "maintainer": "preetsmohan",
+    "width": 1,
+    "height": 1,
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"x":0, "y":0},
+            ]
+        }
+    }
+}
