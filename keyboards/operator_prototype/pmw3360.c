@@ -39,6 +39,7 @@ bool _inBurst = false;
 void print_byte(uint8_t byte) { dprintf("%c%c%c%c%c%c%c%c|", (byte & 0x80 ? '1' : '0'), (byte & 0x40 ? '1' : '0'), (byte & 0x20 ? '1' : '0'), (byte & 0x10 ? '1' : '0'), (byte & 0x08 ? '1' : '0'), (byte & 0x04 ? '1' : '0'), (byte & 0x02 ? '1' : '0'), (byte & 0x01 ? '1' : '0')); }
 #endif
 
+#define SPI_SS_PIN A3
 
 bool spi_start_adv(void) {
     bool status = spi_start(SPI_SS_PIN, false, 3, SPI_DIVISOR);

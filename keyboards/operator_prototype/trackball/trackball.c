@@ -55,7 +55,7 @@ bool     BurstState        = false;  // init burst state for Trackball module
 uint16_t MotionStart       = 0;      // Timer for accel, 0 is resting state
 uint16_t lastScroll        = 0;      // Previous confirmed wheel event
 uint16_t lastMidClick      = 0;      // Stops scrollwheel from being read if it was pressed
-uint8_t  OptLowPin         = OPT_ENC1;
+uint32_t  OptLowPin         = OPT_ENC1;
 bool     debug_encoder     = false;
 
 __attribute__((weak)) void process_wheel_user(report_mouse_t* mouse_report, int16_t h, int16_t v) {
@@ -85,8 +85,12 @@ __attribute__((weak)) void process_wheel(report_mouse_t* mouse_report) {
     }
 
     lastScroll  = timer_read();
-    uint16_t p1 = adc_read(OPT_ENC1_MUX);
-    uint16_t p2 = adc_read(OPT_ENC2_MUX);
+
+    adc_mux test = {0, 0};
+
+
+    uint16_t p1 = adc_read(test);
+    uint16_t p2 = adc_read(test);
     if (debug_encoder) dprintf("OPT1: %d, OPT2: %d\n", p1, p2);
 
     uint8_t dir = opt_encoder_handler(p1, p2);

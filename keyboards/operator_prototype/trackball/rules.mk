@@ -1,11 +1,5 @@
 # MCU name
-# MCU = atmega32u4
-
-CTPC=yes
-
-
-# Processor frequency
-F# _CPU = 8000000
+MCU = STM32F042
 
 # Build Options
 #   change yes to no to disable
@@ -29,4 +23,4 @@ MOUSEKEY_ENABLE = no        # Mouse keys
 QUANTUM_LIB_SRC += analog.c spi_master.c
 SRC += pmw3360.c opt_encoder.c
 
-DEFAULT_FOLDER = ploopyco/trackball/rev1_005
+DEFAULT_FOLDER = operator_prototype/trackball/v1

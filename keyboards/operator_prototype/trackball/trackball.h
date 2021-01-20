@@ -24,11 +24,7 @@
 #include "analog.h"
 #include "opt_encoder.h"
 #include "pointing_device.h"
-#if defined(KEYBOARD_ploopyco_trackball_rev1)
-#    include "rev1.h"
-#elif defined(KEYBOARD_ploopyco_trackball_rev1_005)
-#    include "rev1_005.h"
-#endif
+#include "v1.h"
 
 // Sensor defs
 #define OPT_ENC1 F0
@@ -41,8 +37,8 @@ void process_mouse_user(report_mouse_t* mouse_report, int16_t x, int16_t y);
 void process_wheel(report_mouse_t* mouse_report);
 void process_wheel_user(report_mouse_t* mouse_report, int16_t h, int16_t v);
 
-#define LAYOUT(BL, BM, BR, BF, BB) \
-    { {BL, BM, BR, BF, BB}, }
+#define LAYOUT(BL) \
+    { {BL}, }
 
 typedef union {
   uint32_t raw;
