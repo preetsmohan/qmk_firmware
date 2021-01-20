@@ -26,35 +26,7 @@
 #    define SCROLL_THRESH_RANGE_LIM 10
 #endif
 
-enum State { HIHI, HILO, LOLO, LOHI };
 
-enum State state;
-
-/* Variables used for scroll wheel functionality. */
-bool lohif;
-bool hilof;
-int  lowA;
-int  highA;
-bool cLowA;
-bool cHighA;
-int  lowIndexA;
-int  highIndexA;
-bool lowOverflowA;
-bool highOverflowA;
-int  lowB;
-int  highB;
-bool cLowB;
-bool cHighB;
-int  lowIndexB;
-int  highIndexB;
-bool lowOverflowB;
-bool highOverflowB;
-int  scrollThresholdA;
-int  scrollThresholdB;
-int  arLowA[SCROLLER_AR_SIZE];
-int  arHighA[SCROLLER_AR_SIZE];
-int  arLowB[SCROLLER_AR_SIZE];
-int  arHighB[SCROLLER_AR_SIZE];
 
 void calculateThresholdA(int curA);
 void calculateThresholdB(int curB);

@@ -57,5 +57,7 @@
 
 #define ROTATIONAL_TRANSFORM_ANGLE 20
 
+#define SPI_DRIVER SPID1
+
 // If board has a debug LED, you can enable it by defining this
 // #define DEBUG_LED_PIN F7

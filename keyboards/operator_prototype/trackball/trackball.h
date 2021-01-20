@@ -27,8 +27,8 @@
 #include "v1.h"
 
 // Sensor defs
-#define OPT_ENC1 F0
-#define OPT_ENC2 F4
+#define OPT_ENC1 D0
+#define OPT_ENC2 D4
 #define OPT_ENC1_MUX 0
 #define OPT_ENC2_MUX 4
 
