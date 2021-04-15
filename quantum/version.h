@@ -1,0 +1,4 @@
+#define QMK_VERSION "0.10.9-792-g58f002-dirty"
+#define QMK_BUILDDATE "2021-04-14-19:51:25"
+#define CHIBIOS_VERSION "breaking_2020_q1"
+#define CHIBIOS_CONTRIB_VERSION "breaking_2020_q1"

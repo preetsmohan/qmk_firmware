@@ -21,7 +21,7 @@
 #include "quantum.h"
 
 #ifndef SPI_DRIVER
-#    define SPI_DRIVER SPID2
+#    define SPI_DRIVER SPID1
 #endif
 
 #ifndef SPI_SCK_PIN
