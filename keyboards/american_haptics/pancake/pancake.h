@@ -7,3 +7,8 @@
 ) { \
 	{ K00}  \
 }
+
+enum encoder_modes {
+  ENC_MODE_MIN,
+  ENC_MODE_MAX,
+};

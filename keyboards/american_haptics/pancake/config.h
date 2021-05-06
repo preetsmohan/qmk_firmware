@@ -8,7 +8,7 @@
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    AMERICANHAPTICS
 #define PRODUCT         AMERICANHAPTICS
-#define DESCRIPTION     PRETTY COOL BIG ROTARY KNOB
+#define DESCRIPTION     /*PRETTY COOL BIG ROTARY KNOB*/
 
 /* key matrix size */
 #define MATRIX_ROWS 1
@@ -19,8 +19,9 @@
 #define MATRIX_COL_PINS { D2 }
 
 /*Rotary Encoder Pins*/
-#define ENCODERS_PAD_A { B0 }
-#define ENCODERS_PAD_B { B1 }
+#define ENCODERS_PAD_A { E6 }
+#define ENCODERS_PAD_B { B4 }
+#define DIP_SWITCH_PINS { D0 }
 
 /*Sets the number of pulses per increment*/
 #define ENCODER_RESOLUTION 2
@@ -44,3 +45,5 @@
 
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
+
+#define TAP_CODE_DELAY 20
